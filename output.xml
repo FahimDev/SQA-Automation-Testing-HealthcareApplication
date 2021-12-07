@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211207 16:38:26.793" rpa="false" schemaversion="2">
+<suite id="s1" name="TS BMDC 001" source="C:\MyProperty\SQA-Automation-Testing-HealthcareApplication\TestCases\TS_BMDC_001.robot">
+<test id="s1-t1" name="TC_BMDC_Welcome_01">
+<kw name="Open and visit website" library="HomePageKeywords">
+<arg>${link}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${driver}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211207 16:38:27.264" level="INFO">Opening browser 'chrome' to base url 'https://health-bmdc.research.glitch-innovations.com/'.</msg>
+<status status="PASS" starttime="20211207 16:38:27.263" endtime="20211207 16:38:32.225"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211207 16:38:32.225" endtime="20211207 16:38:32.350"/>
+</kw>
+<status status="PASS" starttime="20211207 16:38:27.262" endtime="20211207 16:38:32.351"/>
+</kw>
+<kw name="Close Browser" library="HomePageKeywords">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20211207 16:38:32.354" endtime="20211207 16:38:34.826"/>
+</kw>
+<status status="PASS" starttime="20211207 16:38:32.353" endtime="20211207 16:38:34.826"/>
+</kw>
+<status status="PASS" starttime="20211207 16:38:27.261" endtime="20211207 16:38:34.827"/>
+</test>
+<status status="PASS" starttime="20211207 16:38:26.797" endtime="20211207 16:38:34.831"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TS BMDC 001">TS BMDC 001</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
