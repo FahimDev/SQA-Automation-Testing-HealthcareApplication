@@ -1,5 +1,5 @@
 ***Settings***
-Documentation   Check the functionality of Medicine Page
+Documentation   Check the functionality of Medicine's Details Page
 
 Library     SeleniumLibrary
 Resource    ../Resources/HomePageKeywords.robot
@@ -15,24 +15,19 @@ ${search_value_bra}     Ace
 ${search_value_gen}  Para
 ${brand}    Brands
 ${generic}  Generics
+${check_content}    Indication
 
 ***Test Cases***
-TC_BMDC_Medicine_01
-    [Documentation]     Check If Medicine page can be visited
+
+TC_BMDC_Medicine_Details_01
+    [Documentation]     Check if Medicine's details page have Indication section
     [Tags]  p0
-    #set selenium speed  1s
     Go to Medicine List Page
-
-TC_BMDC_Medicine_02 
-    [Documentation]     Search Medicine by Brands filter using search bar
-    [Tags]  p1
-    #set selenium speed  1s
     Search medicine     ${brand}  ${search_value_bra}
-    go back
+    Check element visibility   ${check_content} 
 
-TC_BMDC_Medicine_03
-    [Documentation]     Search Medicine by Generic filter using search bar
-    [Tags]  p1
-    #set selenium speed  1s
-    Search medicine     ${generic}  ${search_value_gen}
-    go back
+TC_BMDC_Medicine_Details_02
+    [Documentation]     Check if Generic Hyperlink works on Medicine's Details page
+    [Tags]  p2
+    Visit Generic Page from Medicine Details
+    sleep   2s

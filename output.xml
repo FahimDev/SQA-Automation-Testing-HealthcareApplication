@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211208 12:21:43.149" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211208 16:14:31.161" rpa="false" schemaversion="2">
 <suite id="s1" name="TestCases" source="C:\MyProperty\SQA-Automation-Testing-HealthcareApplication\TestCases">
 <suite id="s1-s1" name="TS BMDC 001" source="C:\MyProperty\SQA-Automation-Testing-HealthcareApplication\TestCases\TS_BMDC_001.robot">
 <kw name="Open and visit website" library="HomePageKeywords" type="SETUP">
@@ -9,29 +9,29 @@
 <arg>${url}</arg>
 <arg>${driver}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20211208 12:21:43.641" level="INFO">Opening browser 'chrome' to base url 'https://health-bmdc.research.glitch-innovations.com/'.</msg>
-<status status="PASS" starttime="20211208 12:21:43.640" endtime="20211208 12:21:49.310"/>
+<msg timestamp="20211208 16:14:31.709" level="INFO">Opening browser 'chrome' to base url 'https://health-bmdc.research.glitch-innovations.com/'.</msg>
+<status status="PASS" starttime="20211208 16:14:31.708" endtime="20211208 16:14:37.237"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20211208 12:21:49.311" endtime="20211208 12:21:49.452"/>
+<status status="PASS" starttime="20211208 16:14:37.238" endtime="20211208 16:14:37.393"/>
 </kw>
-<status status="PASS" starttime="20211208 12:21:43.639" endtime="20211208 12:21:49.453"/>
+<status status="PASS" starttime="20211208 16:14:31.707" endtime="20211208 16:14:37.394"/>
 </kw>
 <test id="s1-s1-t1" name="TC_BMDC_Welcome_01">
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20211208 12:21:49.456" endtime="20211208 12:21:49.463"/>
+<status status="PASS" starttime="20211208 16:14:37.402" endtime="20211208 16:14:37.415"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211208 12:21:52.474" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20211208 12:21:49.464" endtime="20211208 12:21:52.474"/>
+<msg timestamp="20211208 16:14:40.426" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211208 16:14:37.417" endtime="20211208 16:14:40.426"/>
 </kw>
 <doc>Check If welcome page can be visited</doc>
 <tag>p0</tag>
-<status status="PASS" starttime="20211208 12:21:49.453" endtime="20211208 12:21:52.476"/>
+<status status="PASS" starttime="20211208 16:14:37.395" endtime="20211208 16:14:40.427"/>
 </test>
 <test id="s1-s1-t2" name="TC_BMDC_Welcome_02">
 <kw name="Count Hyper Links" library="HomePageKeywords">
@@ -40,71 +40,71 @@
 <var>${countLinks}</var>
 <arg>${anchor_tag}</arg>
 <doc>Returns the number of elements matching ``locator``.</doc>
-<msg timestamp="20211208 12:21:52.507" level="INFO">${countLinks} = 28</msg>
-<status status="PASS" starttime="20211208 12:21:52.484" endtime="20211208 12:21:52.507"/>
+<msg timestamp="20211208 16:14:40.454" level="INFO">${countLinks} = 28</msg>
+<status status="PASS" starttime="20211208 16:14:40.432" endtime="20211208 16:14:40.454"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${countLinks}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20211208 12:21:52.507" endtime="20211208 12:21:52.508"/>
+<status status="PASS" starttime="20211208 16:14:40.454" endtime="20211208 16:14:40.455"/>
 </kw>
-<msg timestamp="20211208 12:21:52.509" level="INFO">${hyperlinks} = 28</msg>
-<status status="PASS" starttime="20211208 12:21:52.483" endtime="20211208 12:21:52.509"/>
+<msg timestamp="20211208 16:14:40.455" level="INFO">${hyperlinks} = 28</msg>
+<status status="PASS" starttime="20211208 16:14:40.431" endtime="20211208 16:14:40.455"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${hyperlinks}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20211208 12:21:52.509" endtime="20211208 12:21:52.510"/>
+<status status="PASS" starttime="20211208 16:14:40.456" endtime="20211208 16:14:40.457"/>
 </kw>
 <doc>Count the hyperlinks in welcome page</doc>
 <tag>p2</tag>
-<status status="PASS" starttime="20211208 12:21:52.481" endtime="20211208 12:21:52.511"/>
+<status status="PASS" starttime="20211208 16:14:40.430" endtime="20211208 16:14:40.458"/>
 </test>
 <test id="s1-s1-t3" name="TC_BMDC_Welcome_03">
 <kw name="Visit A NewsFeed" library="HomePageKeywords">
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>${api_hyper_link}</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20211208 12:21:52.517" level="INFO">Clicking link 'xpath://*[@id="international-news"]/div[1]/div/div/a'.</msg>
-<status status="PASS" starttime="20211208 12:21:52.516" endtime="20211208 12:22:14.122"/>
+<msg timestamp="20211208 16:14:40.462" level="INFO">Clicking link 'xpath://*[@id="international-news"]/div[1]/div/div/a'.</msg>
+<status status="PASS" starttime="20211208 16:14:40.462" endtime="20211208 16:14:53.351"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211208 12:22:16.128" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211208 12:22:14.123" endtime="20211208 12:22:16.129"/>
+<msg timestamp="20211208 16:14:55.366" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211208 16:14:53.352" endtime="20211208 16:14:55.366"/>
 </kw>
 <kw name="Go Back" library="SeleniumLibrary">
 <doc>Simulates the user clicking the back button on their browser.</doc>
-<status status="PASS" starttime="20211208 12:22:16.129" endtime="20211208 12:22:16.623"/>
+<status status="PASS" starttime="20211208 16:14:55.366" endtime="20211208 16:14:56.045"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211208 12:22:19.627" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20211208 12:22:16.623" endtime="20211208 12:22:19.627"/>
+<msg timestamp="20211208 16:14:59.058" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211208 16:14:56.045" endtime="20211208 16:14:59.058"/>
 </kw>
-<status status="PASS" starttime="20211208 12:21:52.516" endtime="20211208 12:22:19.628"/>
+<status status="PASS" starttime="20211208 16:14:40.461" endtime="20211208 16:14:59.058"/>
 </kw>
 <doc>Visit one of the hyperlinks</doc>
 <tag>p1</tag>
-<status status="PASS" starttime="20211208 12:21:52.514" endtime="20211208 12:22:19.631"/>
+<status status="PASS" starttime="20211208 16:14:40.460" endtime="20211208 16:14:59.059"/>
 </test>
 <test id="s1-s1-t4" name="TC_BMDC_Welcome_04">
 <kw name="Download Desktop Software" library="HomePageKeywords">
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>${btn_doc_soft_download}</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20211208 12:22:19.645" level="INFO">Clicking link 'xpath://*[@id="navbarNav"]/a'.</msg>
-<status status="PASS" starttime="20211208 12:22:19.640" endtime="20211208 12:22:21.341"/>
+<msg timestamp="20211208 16:14:59.063" level="INFO">Clicking link 'xpath://*[@id="navbarNav"]/a'.</msg>
+<status status="PASS" starttime="20211208 16:14:59.063" endtime="20211208 16:14:59.539"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211208 12:22:24.353" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20211208 12:22:21.342" endtime="20211208 12:22:24.353"/>
+<msg timestamp="20211208 16:15:02.553" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211208 16:14:59.540" endtime="20211208 16:15:02.553"/>
 </kw>
-<status status="PASS" starttime="20211208 12:22:19.639" endtime="20211208 12:22:24.353"/>
+<status status="PASS" starttime="20211208 16:14:59.063" endtime="20211208 16:15:02.554"/>
 </kw>
 <kw name="Check Download File" library="HomePageKeywords">
 <arg>${DIRECTORY_PATH}</arg>
@@ -112,30 +112,30 @@
 <kw name="File Should Exist" library="OperatingSystem">
 <arg>${path}\\${file_name}</arg>
 <doc>Fails unless the given ``path`` points to an existing file.</doc>
-<msg timestamp="20211208 12:22:24.356" level="INFO" html="true">File '&lt;a href="file://C:\Users\Asus\Downloads\software.zip"&gt;C:\Users\Asus\Downloads\software.zip&lt;/a&gt;' exists.</msg>
-<status status="PASS" starttime="20211208 12:22:24.355" endtime="20211208 12:22:24.356"/>
+<msg timestamp="20211208 16:15:02.557" level="INFO" html="true">File '&lt;a href="file://C:\Users\Asus\Downloads\software.zip"&gt;C:\Users\Asus\Downloads\software.zip&lt;/a&gt;' exists.</msg>
+<status status="PASS" starttime="20211208 16:15:02.556" endtime="20211208 16:15:02.557"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>File was successfully downloaded to ${file_name}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20211208 12:22:24.356" level="INFO">File was successfully downloaded to software.zip</msg>
-<status status="PASS" starttime="20211208 12:22:24.356" endtime="20211208 12:22:24.357"/>
+<msg timestamp="20211208 16:15:02.557" level="INFO">File was successfully downloaded to software.zip</msg>
+<status status="PASS" starttime="20211208 16:15:02.557" endtime="20211208 16:15:02.557"/>
 </kw>
-<status status="PASS" starttime="20211208 12:22:24.354" endtime="20211208 12:22:24.357"/>
+<status status="PASS" starttime="20211208 16:15:02.555" endtime="20211208 16:15:02.558"/>
 </kw>
 <doc>Software Download</doc>
 <tag>p0</tag>
-<status status="PASS" starttime="20211208 12:22:19.636" endtime="20211208 12:22:24.357"/>
+<status status="PASS" starttime="20211208 16:14:59.062" endtime="20211208 16:15:02.558"/>
 </test>
 <kw name="Close Browser" library="HomePageKeywords" type="TEARDOWN">
 <kw name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20211208 12:22:24.361" endtime="20211208 12:22:27.527"/>
+<status status="PASS" starttime="20211208 16:15:02.562" endtime="20211208 16:15:05.687"/>
 </kw>
-<status status="PASS" starttime="20211208 12:22:24.360" endtime="20211208 12:22:27.528"/>
+<status status="PASS" starttime="20211208 16:15:02.562" endtime="20211208 16:15:05.688"/>
 </kw>
 <doc>Check the functionality of Welcome Page</doc>
-<status status="PASS" starttime="20211208 12:21:43.198" endtime="20211208 12:22:27.528"/>
+<status status="PASS" starttime="20211208 16:14:31.213" endtime="20211208 16:15:05.688"/>
 </suite>
 <suite id="s1-s2" name="TS BMDC 002" source="C:\MyProperty\SQA-Automation-Testing-HealthcareApplication\TestCases\TS_BMDC_002.robot">
 <kw name="Open and visit website" library="HomePageKeywords" type="SETUP">
@@ -145,39 +145,34 @@
 <arg>${url}</arg>
 <arg>${driver}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20211208 12:22:27.567" level="INFO">Opening browser 'chrome' to base url 'https://health-bmdc.research.glitch-innovations.com/'.</msg>
-<status status="PASS" starttime="20211208 12:22:27.565" endtime="20211208 12:22:32.358"/>
+<msg timestamp="20211208 16:15:05.735" level="INFO">Opening browser 'chrome' to base url 'https://health-bmdc.research.glitch-innovations.com/'.</msg>
+<status status="PASS" starttime="20211208 16:15:05.734" endtime="20211208 16:15:10.477"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20211208 12:22:32.359" endtime="20211208 12:22:32.499"/>
+<status status="PASS" starttime="20211208 16:15:10.478" endtime="20211208 16:15:10.617"/>
 </kw>
-<status status="PASS" starttime="20211208 12:22:27.564" endtime="20211208 12:22:32.499"/>
+<status status="PASS" starttime="20211208 16:15:05.733" endtime="20211208 16:15:10.619"/>
 </kw>
 <test id="s1-s2-t1" name="TC_BMDC_Medicine_01">
-<kw name="Set Selenium Speed" library="SeleniumLibrary">
-<arg>1s</arg>
-<doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20211208 12:22:32.501" endtime="20211208 12:22:32.502"/>
-</kw>
 <kw name="Go to Medicine List Page" library="MedicineViewKeywords">
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>${link_medicine_list}</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20211208 12:22:32.506" level="INFO">Clicking link '//*[@id="navbarNav"]/ul/li[2]/a'.</msg>
-<status status="PASS" starttime="20211208 12:22:32.504" endtime="20211208 12:22:37.549"/>
+<msg timestamp="20211208 16:15:10.625" level="INFO">Clicking link '//*[@id="navbarNav"]/ul/li[2]/a'.</msg>
+<status status="PASS" starttime="20211208 16:15:10.624" endtime="20211208 16:15:11.615"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211208 12:22:39.554" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211208 12:22:37.549" endtime="20211208 12:22:39.554"/>
+<msg timestamp="20211208 16:15:13.632" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211208 16:15:11.616" endtime="20211208 16:15:13.632"/>
 </kw>
-<status status="PASS" starttime="20211208 12:22:32.503" endtime="20211208 12:22:39.554"/>
+<status status="PASS" starttime="20211208 16:15:10.623" endtime="20211208 16:15:13.632"/>
 </kw>
 <doc>Check If Medicine page can be visited</doc>
 <tag>p0</tag>
-<status status="PASS" starttime="20211208 12:22:32.499" endtime="20211208 12:22:39.555"/>
+<status status="PASS" starttime="20211208 16:15:10.620" endtime="20211208 16:15:13.632"/>
 </test>
 <test id="s1-s2-t2" name="TC_BMDC_Medicine_02">
 <kw name="Search medicine" library="MedicineViewKeywords">
@@ -186,63 +181,91 @@
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${btn_med_option}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20211208 12:22:39.561" level="INFO">Clicking button 'id:btn-option'.</msg>
-<status status="PASS" starttime="20211208 12:22:39.560" endtime="20211208 12:22:44.683"/>
+<msg timestamp="20211208 16:15:13.638" level="INFO">Clicking button 'id:btn-option'.</msg>
+<status status="PASS" starttime="20211208 16:15:13.638" endtime="20211208 16:15:13.721"/>
 </kw>
 <if>
 <branch type="IF" condition="'${type}'=='${match}'">
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${btn_option_brand}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20211208 12:22:44.684" level="INFO">Clicking button 'id:option-brands'.</msg>
-<status status="PASS" starttime="20211208 12:22:44.684" endtime="20211208 12:22:49.841"/>
+<msg timestamp="20211208 16:15:13.722" level="INFO">Clicking button 'id:option-brands'.</msg>
+<status status="PASS" starttime="20211208 16:15:13.722" endtime="20211208 16:15:13.826"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${txt_search_med}</arg>
 <arg>${search_value}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211208 12:22:49.844" level="INFO">Typing text 'Ace' into text field 'id:search-text'.</msg>
-<status status="PASS" starttime="20211208 12:22:49.842" endtime="20211208 12:22:53.016"/>
+<msg timestamp="20211208 16:15:13.827" level="INFO">Typing text 'Ace' into text field 'id:search-text'.</msg>
+<status status="PASS" starttime="20211208 16:15:13.826" endtime="20211208 16:15:14.005"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211208 16:15:15.020" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211208 16:15:14.005" endtime="20211208 16:15:15.020"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${result}</var>
+<arg>${suggest_med_item}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20211208 16:15:15.056" level="INFO">${result} = Ace Plus 500 mg</msg>
+<status status="PASS" starttime="20211208 16:15:15.020" endtime="20211208 16:15:15.056"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${suggest_med_item}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211208 12:22:53.019" level="INFO">Clicking element 'xpath:/html/body/div/div/div/div[1]/div/ul/li[1]'.</msg>
-<status status="PASS" starttime="20211208 12:22:53.017" endtime="20211208 12:23:00.814"/>
+<msg timestamp="20211208 16:15:15.057" level="INFO">Clicking element 'xpath:/html/body/div/div/div/div[1]/div/ul/li[1]'.</msg>
+<status status="PASS" starttime="20211208 16:15:15.057" endtime="20211208 16:15:18.140"/>
 </kw>
-<status status="PASS" starttime="20211208 12:22:44.684" endtime="20211208 12:23:00.816"/>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${result}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211208 16:15:18.140" endtime="20211208 16:15:18.143"/>
+</kw>
+<status status="PASS" starttime="20211208 16:15:13.722" endtime="20211208 16:15:18.143"/>
 </branch>
 <branch type="ELSE">
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${btn_option_generic}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20211208 12:23:00.816" endtime="20211208 12:23:00.817"/>
+<status status="NOT RUN" starttime="20211208 16:15:18.143" endtime="20211208 16:15:18.143"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${txt_search_med}</arg>
 <arg>${search_value}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20211208 12:23:00.817" endtime="20211208 12:23:00.817"/>
+<status status="NOT RUN" starttime="20211208 16:15:18.144" endtime="20211208 16:15:18.144"/>
 </kw>
-<status status="NOT RUN" starttime="20211208 12:23:00.816" endtime="20211208 12:23:00.817"/>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20211208 16:15:18.144" endtime="20211208 16:15:18.144"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${suggest_gen_item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20211208 16:15:18.144" endtime="20211208 16:15:18.144"/>
+</kw>
+<status status="NOT RUN" starttime="20211208 16:15:18.143" endtime="20211208 16:15:18.144"/>
 </branch>
-<status status="PASS" starttime="20211208 12:22:44.683" endtime="20211208 12:23:00.817"/>
+<status status="PASS" starttime="20211208 16:15:13.721" endtime="20211208 16:15:18.145"/>
 </if>
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211208 12:23:03.819" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20211208 12:23:00.818" endtime="20211208 12:23:03.820"/>
+<msg timestamp="20211208 16:15:21.149" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211208 16:15:18.145" endtime="20211208 16:15:21.149"/>
+</kw>
+<status status="PASS" starttime="20211208 16:15:13.636" endtime="20211208 16:15:21.149"/>
 </kw>
 <kw name="Go Back" library="SeleniumLibrary">
 <doc>Simulates the user clicking the back button on their browser.</doc>
-<status status="PASS" starttime="20211208 12:23:03.820" endtime="20211208 12:23:04.942"/>
-</kw>
-<status status="PASS" starttime="20211208 12:22:39.559" endtime="20211208 12:23:04.943"/>
+<status status="PASS" starttime="20211208 16:15:21.151" endtime="20211208 16:15:21.301"/>
 </kw>
 <doc>Search Medicine by Brands filter using search bar</doc>
 <tag>p1</tag>
-<status status="PASS" starttime="20211208 12:22:39.558" endtime="20211208 12:23:04.945"/>
+<status status="PASS" starttime="20211208 16:15:13.635" endtime="20211208 16:15:21.307"/>
 </test>
 <test id="s1-s2-t3" name="TC_BMDC_Medicine_03">
 <kw name="Search medicine" library="MedicineViewKeywords">
@@ -251,88 +274,283 @@
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${btn_med_option}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20211208 12:23:04.955" level="INFO">Clicking button 'id:btn-option'.</msg>
-<status status="PASS" starttime="20211208 12:23:04.954" endtime="20211208 12:23:10.109"/>
+<msg timestamp="20211208 16:15:21.318" level="INFO">Clicking button 'id:btn-option'.</msg>
+<status status="PASS" starttime="20211208 16:15:21.317" endtime="20211208 16:15:21.429"/>
 </kw>
 <if>
 <branch type="IF" condition="'${type}'=='${match}'">
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${btn_option_brand}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20211208 12:23:10.110" endtime="20211208 12:23:10.110"/>
+<status status="NOT RUN" starttime="20211208 16:15:21.430" endtime="20211208 16:15:21.431"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${txt_search_med}</arg>
 <arg>${search_value}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20211208 12:23:10.110" endtime="20211208 12:23:10.110"/>
+<status status="NOT RUN" starttime="20211208 16:15:21.431" endtime="20211208 16:15:21.431"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20211208 16:15:21.432" endtime="20211208 16:15:21.432"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${result}</var>
+<arg>${suggest_med_item}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20211208 16:15:21.433" endtime="20211208 16:15:21.434"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${suggest_med_item}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20211208 12:23:10.110" endtime="20211208 12:23:10.110"/>
+<status status="NOT RUN" starttime="20211208 16:15:21.434" endtime="20211208 16:15:21.434"/>
 </kw>
-<status status="NOT RUN" starttime="20211208 12:23:10.109" endtime="20211208 12:23:10.110"/>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${result}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20211208 16:15:21.434" endtime="20211208 16:15:21.435"/>
+</kw>
+<status status="NOT RUN" starttime="20211208 16:15:21.430" endtime="20211208 16:15:21.435"/>
 </branch>
 <branch type="ELSE">
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${btn_option_generic}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20211208 12:23:10.111" level="INFO">Clicking button 'id:option-generics'.</msg>
-<status status="PASS" starttime="20211208 12:23:10.111" endtime="20211208 12:23:15.233"/>
+<msg timestamp="20211208 16:15:21.435" level="INFO">Clicking button 'id:option-generics'.</msg>
+<status status="PASS" starttime="20211208 16:15:21.435" endtime="20211208 16:15:21.531"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${txt_search_med}</arg>
 <arg>${search_value}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211208 12:23:15.235" level="INFO">Typing text 'Para' into text field 'id:search-text'.</msg>
-<status status="PASS" starttime="20211208 12:23:15.234" endtime="20211208 12:23:18.427"/>
+<msg timestamp="20211208 16:15:21.533" level="INFO">Typing text 'Para' into text field 'id:search-text'.</msg>
+<status status="PASS" starttime="20211208 16:15:21.532" endtime="20211208 16:15:21.733"/>
 </kw>
-<status status="PASS" starttime="20211208 12:23:10.111" endtime="20211208 12:23:18.428"/>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211208 16:15:22.742" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211208 16:15:21.734" endtime="20211208 16:15:22.742"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${suggest_gen_item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211208 16:15:22.743" level="INFO">Clicking element 'xpath://*[@id="medList"]/ul/li'.</msg>
+<status status="PASS" starttime="20211208 16:15:22.742" endtime="20211208 16:15:23.499"/>
+</kw>
+<status status="PASS" starttime="20211208 16:15:21.435" endtime="20211208 16:15:23.500"/>
 </branch>
-<status status="PASS" starttime="20211208 12:23:10.109" endtime="20211208 12:23:18.428"/>
+<status status="PASS" starttime="20211208 16:15:21.429" endtime="20211208 16:15:23.500"/>
 </if>
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211208 12:23:21.436" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20211208 12:23:18.429" endtime="20211208 12:23:21.436"/>
+<msg timestamp="20211208 16:15:26.508" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211208 16:15:23.500" endtime="20211208 16:15:26.508"/>
+</kw>
+<status status="PASS" starttime="20211208 16:15:21.315" endtime="20211208 16:15:26.509"/>
 </kw>
 <kw name="Go Back" library="SeleniumLibrary">
 <doc>Simulates the user clicking the back button on their browser.</doc>
-<status status="PASS" starttime="20211208 12:23:21.436" endtime="20211208 12:23:22.530"/>
-</kw>
-<status status="PASS" starttime="20211208 12:23:04.952" endtime="20211208 12:23:22.531"/>
+<status status="PASS" starttime="20211208 16:15:26.510" endtime="20211208 16:15:26.641"/>
 </kw>
 <doc>Search Medicine by Generic filter using search bar</doc>
 <tag>p1</tag>
-<status status="PASS" starttime="20211208 12:23:04.950" endtime="20211208 12:23:22.533"/>
+<status status="PASS" starttime="20211208 16:15:21.314" endtime="20211208 16:15:26.647"/>
 </test>
 <kw name="Close Browser" library="HomePageKeywords" type="TEARDOWN">
 <kw name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20211208 12:23:22.541" endtime="20211208 12:23:26.273"/>
+<status status="PASS" starttime="20211208 16:15:26.653" endtime="20211208 16:15:29.287"/>
 </kw>
-<status status="PASS" starttime="20211208 12:23:22.541" endtime="20211208 12:23:26.274"/>
+<status status="PASS" starttime="20211208 16:15:26.653" endtime="20211208 16:15:29.287"/>
 </kw>
 <doc>Check the functionality of Medicine Page</doc>
-<status status="PASS" starttime="20211208 12:22:27.535" endtime="20211208 12:23:26.275"/>
+<status status="PASS" starttime="20211208 16:15:05.694" endtime="20211208 16:15:29.287"/>
 </suite>
-<status status="PASS" starttime="20211208 12:21:43.152" endtime="20211208 12:23:26.287"/>
+<suite id="s1-s3" name="TS BMDC 003" source="C:\MyProperty\SQA-Automation-Testing-HealthcareApplication\TestCases\TS_BMDC_003.robot">
+<kw name="Open and visit website" library="HomePageKeywords" type="SETUP">
+<arg>${link}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${driver}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211208 16:15:29.315" level="INFO">Opening browser 'chrome' to base url 'https://health-bmdc.research.glitch-innovations.com/'.</msg>
+<status status="PASS" starttime="20211208 16:15:29.314" endtime="20211208 16:15:34.326"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211208 16:15:34.326" endtime="20211208 16:15:34.462"/>
+</kw>
+<status status="PASS" starttime="20211208 16:15:29.312" endtime="20211208 16:15:34.463"/>
+</kw>
+<test id="s1-s3-t1" name="TC_BMDC_Medicine_Details_01">
+<kw name="Go to Medicine List Page" library="MedicineViewKeywords">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${link_medicine_list}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20211208 16:15:34.468" level="INFO">Clicking link '//*[@id="navbarNav"]/ul/li[2]/a'.</msg>
+<status status="PASS" starttime="20211208 16:15:34.467" endtime="20211208 16:15:35.804"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211208 16:15:37.818" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211208 16:15:35.804" endtime="20211208 16:15:37.818"/>
+</kw>
+<status status="PASS" starttime="20211208 16:15:34.466" endtime="20211208 16:15:37.818"/>
+</kw>
+<kw name="Search medicine" library="MedicineViewKeywords">
+<arg>${brand}</arg>
+<arg>${search_value_bra}</arg>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_med_option}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211208 16:15:37.822" level="INFO">Clicking button 'id:btn-option'.</msg>
+<status status="PASS" starttime="20211208 16:15:37.821" endtime="20211208 16:15:37.909"/>
+</kw>
+<if>
+<branch type="IF" condition="'${type}'=='${match}'">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_option_brand}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211208 16:15:37.910" level="INFO">Clicking button 'id:option-brands'.</msg>
+<status status="PASS" starttime="20211208 16:15:37.910" endtime="20211208 16:15:38.019"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_search_med}</arg>
+<arg>${search_value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211208 16:15:38.020" level="INFO">Typing text 'Ace' into text field 'id:search-text'.</msg>
+<status status="PASS" starttime="20211208 16:15:38.019" endtime="20211208 16:15:38.176"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211208 16:15:39.187" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211208 16:15:38.177" endtime="20211208 16:15:39.187"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${result}</var>
+<arg>${suggest_med_item}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20211208 16:15:39.223" level="INFO">${result} = Ace Plus 500 mg</msg>
+<status status="PASS" starttime="20211208 16:15:39.187" endtime="20211208 16:15:39.223"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${suggest_med_item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211208 16:15:39.224" level="INFO">Clicking element 'xpath:/html/body/div/div/div/div[1]/div/ul/li[1]'.</msg>
+<status status="PASS" starttime="20211208 16:15:39.224" endtime="20211208 16:15:45.136"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${result}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211208 16:15:45.137" endtime="20211208 16:15:45.138"/>
+</kw>
+<status status="PASS" starttime="20211208 16:15:37.909" endtime="20211208 16:15:45.138"/>
+</branch>
+<branch type="ELSE">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_option_generic}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20211208 16:15:45.138" endtime="20211208 16:15:45.138"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_search_med}</arg>
+<arg>${search_value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20211208 16:15:45.138" endtime="20211208 16:15:45.139"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20211208 16:15:45.139" endtime="20211208 16:15:45.139"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${suggest_gen_item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20211208 16:15:45.139" endtime="20211208 16:15:45.139"/>
+</kw>
+<status status="NOT RUN" starttime="20211208 16:15:45.138" endtime="20211208 16:15:45.139"/>
+</branch>
+<status status="PASS" starttime="20211208 16:15:37.909" endtime="20211208 16:15:45.139"/>
+</if>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211208 16:15:48.151" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211208 16:15:45.140" endtime="20211208 16:15:48.151"/>
+</kw>
+<status status="PASS" starttime="20211208 16:15:37.819" endtime="20211208 16:15:48.152"/>
+</kw>
+<kw name="Check element visibility" library="MedicineViewKeywords">
+<arg>${check_content}</arg>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>${key}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20211208 16:15:48.154" endtime="20211208 16:15:48.179"/>
+</kw>
+<status status="PASS" starttime="20211208 16:15:48.153" endtime="20211208 16:15:48.179"/>
+</kw>
+<doc>Check if Medicine's details page have Indication section</doc>
+<tag>p0</tag>
+<status status="PASS" starttime="20211208 16:15:34.464" endtime="20211208 16:15:48.180"/>
+</test>
+<test id="s1-s3-t2" name="TC_BMDC_Medicine_Details_02">
+<kw name="Visit Generic Page from Medicine Details" library="MedicineViewKeywords">
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211208 16:15:49.197" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211208 16:15:48.184" endtime="20211208 16:15:49.197"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${link_generic}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20211208 16:15:49.198" level="INFO">Clicking link 'xpath:/html/body/div/div/div/div[2]/div/div/div[1]/div[1]/div[2]/a'.</msg>
+<status status="PASS" starttime="20211208 16:15:49.197" endtime="20211208 16:15:50.031"/>
+</kw>
+<status status="PASS" starttime="20211208 16:15:48.183" endtime="20211208 16:15:50.031"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211208 16:15:52.037" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211208 16:15:50.032" endtime="20211208 16:15:52.037"/>
+</kw>
+<doc>Check if Generic Hyperlink works on Medicine's Details page</doc>
+<tag>p2</tag>
+<status status="PASS" starttime="20211208 16:15:48.182" endtime="20211208 16:15:52.039"/>
+</test>
+<kw name="Close Browser" library="HomePageKeywords" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20211208 16:15:52.045" endtime="20211208 16:15:56.081"/>
+</kw>
+<status status="PASS" starttime="20211208 16:15:52.043" endtime="20211208 16:15:56.081"/>
+</kw>
+<doc>Check the functionality of Medicine's Details Page</doc>
+<status status="PASS" starttime="20211208 16:15:29.293" endtime="20211208 16:15:56.082"/>
+</suite>
+<status status="PASS" starttime="20211208 16:14:31.165" endtime="20211208 16:15:56.086"/>
 </suite>
 <statistics>
 <total>
-<stat pass="7" fail="0" skip="0">All Tests</stat>
+<stat pass="9" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="3" fail="0" skip="0">p0</stat>
+<stat pass="4" fail="0" skip="0">p0</stat>
 <stat pass="3" fail="0" skip="0">p1</stat>
-<stat pass="1" fail="0" skip="0">p2</stat>
+<stat pass="2" fail="0" skip="0">p2</stat>
 </tag>
 <suite>
-<stat pass="7" fail="0" skip="0" id="s1" name="TestCases">TestCases</stat>
+<stat pass="9" fail="0" skip="0" id="s1" name="TestCases">TestCases</stat>
 <stat pass="4" fail="0" skip="0" id="s1-s1" name="TS BMDC 001">TestCases.TS BMDC 001</stat>
 <stat pass="3" fail="0" skip="0" id="s1-s2" name="TS BMDC 002">TestCases.TS BMDC 002</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s3" name="TS BMDC 003">TestCases.TS BMDC 003</stat>
 </suite>
 </statistics>
 <errors>
