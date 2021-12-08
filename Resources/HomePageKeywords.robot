@@ -27,13 +27,7 @@ Download Desktop Software
     click link  ${btn_doc_soft_download}
     sleep   3s
 
-
-#On Progress--------------------------------------------
 Check Download File
     [Arguments]     ${path}     ${file_name}
-    #${files}    List Files In Directory    ${path}
-    #Length Should Be    ${files}    1    Should be only one file in the download folder
-    #Should Not Match Regexp    ${files[0]}    (?i).*\\.tmp    Chrome is still downloading a file
-    #${file}    Join Path    ${directory}    ${files[0]}
     File Should Exist   ${path}\\${file_name}
     Log    File was successfully downloaded to ${file_name}
