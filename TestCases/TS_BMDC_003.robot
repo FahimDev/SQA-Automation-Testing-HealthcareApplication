@@ -18,7 +18,6 @@ ${generic}  Generics
 ${check_content}    Indication
 
 ***Test Cases***
-
 TC_BMDC_Medicine_Details_01
     [Documentation]     Check if Medicine's details page have Indication section
     [Tags]  p0

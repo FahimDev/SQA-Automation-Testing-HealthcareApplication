@@ -17,6 +17,19 @@ suggest_med_item = 'xpath:/html/body/div/div/div/div[1]/div/ul/li[1]'
 suggest_gen_item = 'xpath://*[@id="medList"]/ul/li'
 link_generic = 'xpath:/html/body/div/div/div/div[2]/div/div/div[1]/div[1]/div[2]/a'
 
+#Doctor Registration
+drop_application = 'xpath://*[@id="navbarDropdown"]'
+link_doc_application = 'xpath://*[@id="navbarNav"]/ul/li[1]/div/a[1]'
+txt_nid = "name:nid"
+txt_full_name = "name:full_name"
+txt_email = "name:email"
+txt_phone = "name:phone"
+txt_basic_degree = "name:basic_degree"
+txt_adv_degree = "name:advance_degree"
+txt_speciality = "name:speciality"
+txt_work_place = "name:work_place"
+txt_choose = "name:customFile"
+
 #Login Page
 txt_login_username = "name:username"
 txt_login_password = "name:password"
