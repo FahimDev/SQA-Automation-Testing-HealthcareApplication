@@ -24,3 +24,10 @@ Upload Doctor Image
     [Arguments]     ${choose_button}     ${path}
     wait until page contains element    ${choose_button}     60s
     choose file     ${choose_button}     ${path}
+
+Hit Apply Button 
+    click button    ${btn_apply}
+
+Check Confirmnation 
+    [Arguments]     ${msg}
+    page should contain     ${msg}

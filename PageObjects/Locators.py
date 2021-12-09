@@ -29,6 +29,7 @@ txt_adv_degree = "name:advance_degree"
 txt_speciality = "name:speciality"
 txt_work_place = "name:work_place"
 txt_choose = "name:customFile"
+btn_apply = 'xpath:/html/body/div/div/div/div/div/div[2]/form/button'
 
 #Login Page
 txt_login_username = "name:username"

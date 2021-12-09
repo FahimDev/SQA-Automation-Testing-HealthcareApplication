@@ -15,9 +15,11 @@ Test Template   Doctor Registration from public
 ${browser}  chrome
 ${link}  https://health-bmdc.research.glitch-innovations.com/
 
-#C:\\MyProperty\\SQA-Automation-Testing-HealthcareApplication\\TestData\\TestImage\\DemoDocImg.jpeg
+${success_reg}  Please Verify Your Email Address !
+
 
 ${choose_file}  css=[type='file']
+#This is a static path for my test. If anyone using this code please edit your DIRECTORY_PATH
 ${DIRECTORY_PATH}  C:\\MyProperty\\SQA-Automation-Testing-HealthcareApplication\\TestData\\TestImage\\DemoDocImg.jpeg
 ****Test Cases***
 TC_BMDC_Doctor_Application_01   using   ${nid}  ${fullname}     ${email}    ${phone}    ${basicdegree}  ${advdegree}    ${speciality}   ${workplace}
@@ -30,3 +32,7 @@ Doctor Registration from public
     Go to doctors registration page from root 
     Enter Test Data for Doctor Registration     ${nid}  ${fullname}     ${email}    ${phone}    ${basicdegree}  ${advdegree}    ${speciality}   ${workplace}
     Upload Doctor Image   ${choose_file}  ${DIRECTORY_PATH}
+    Hit Apply Button 
+    sleep   2s
+    Check Confirmnation   ${success_reg} 
+    go back
